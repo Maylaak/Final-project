@@ -1,0 +1,261 @@
+
+body {
+  background-color: #6497b1;
+  width: 1200px;
+  margin:0 auto;
+  padding:5px;
+  text-align:center;
+}
+div {
+  text-align:center;
+}
+div#header {
+  border-radius: 1ch;
+  width:1000px;
+  height:40px;
+  margin: auto;
+}
+#title{
+  color: 	#b3cde0;
+  padding-top: 0ch;
+  font-family: "Cooper Black";
+  font-weight: 1000;
+}
+div#menu {
+  border-radius: 1ch;
+  width:250px;
+  float:left;
+  margin:10px 0 10px 5px;
+  height:275px;
+}
+div#menu2 {
+  background-color: black;
+  border-radius: 1ch;
+  padding-top: 1ch;
+  width:250px;
+  float:left;
+  margin:10px 0 10px 5px;
+  height:215px;
+}
+div#content {
+  border:2px solid #b3cde0;
+  background-color: 	#b3cde0;
+  border-radius: 1ch;
+  width:900px;
+  margin:10px 0 10px 275px;
+  height:585px;
+}
+
+#music{
+  border-radius: 1ch;
+  opacity: 0.75;
+}
+
+#clock{
+  opacity: 0.75;
+}
+
+
+
+
+.todo-wrapper {
+  background-color: #fff;
+  border-radius: 1ch;
+  margin:auto;
+  padding: 30px;
+  opacity: 0.75;
+  font-weight: 300;
+  height: 250px;
+  font-family: sans-serif;
+  opacity: 0.75;
+  overflow: scroll;
+}
+
+.todo-wrapper h2 {
+  margin: 0;
+}
+
+.todo-wrapper p {
+  font-style: italic;
+  color: #666;
+  margin: 5px 0;
+}
+
+.todo-wrapper ol {
+  margin: 20px 0;
+
+}
+
+.todo-wrapper ol li {
+  margin: 5px 0;
+  padding: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+ 
+}
+
+.todo-wrapper ol li:nth-child(even) {
+  background: #ddd;
+}
+
+.todo-wrapper .completed {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.todo-wrapper .pretty-button {
+  margin: 10px 2px;
+  padding: 5px 20px;
+  border-radius: 15px;
+  background-color: #0093D5;
+  border: none;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  font-size: small;
+}
+
+.todo-wrapper .pretty-button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.todo-wrapper input {
+  padding: 3px 6px;
+}
+
+.todo-wrapper form {
+  display: inline-block;
+}
+
+#control-wrapper {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.todo-wrapper #clear-button {
+  background-color: #011f4b;
+}
+
+.todo-wrapper #empty-button {
+  background-color: #03396c;
+}
+
+.todo-wrapper #save-button {
+  background-color: #005b96;
+}
+
+
+  .todo-wrapper input {
+      width: 180px;
+  }
+
+  .drag {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .stickytext{
+    font-family: callibri;
+  }
+  .sticky {
+    background: #72abc7;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    /* 0 0 150px rgba(0, 0, 0, 0.2); */
+    cursor: grab;
+    display: inline-block;
+    padding: 1rem;
+    position: absolute;
+    width: 12.5rem;
+    font-family: callibri;
+  }
+  .sticky h3,
+  .sticky p {
+    /* color: #0065b3; */
+    color: whites;
+    pointer-events: none;
+  }
+  .sticky h3 {
+    border-bottom: dashed 2px #0085e8;
+    margin: 0 0 1rem;
+    min-height: 1.3rem;
+    padding: 0 1.5rem 0.25rem 0;
+  }
+  .sticky p {
+    margin: 0;
+    min-height: 9rem;
+  }
+  .sticky .deletesticky {
+    color: #0085e8;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    right: 0.8rem;
+    top: 0.4rem;
+  }
+  
+  .sticky-form {
+    bottom: 1rem;
+    position: static;
+    right: 1rem;
+    height: 100px;
+    width: 200px;
+    padding-left: 75%;
+    padding-top: 3%;
+  }
+  .sticky-form label,
+  .sticky-form input,
+  .sticky-form textarea {
+    color: #fff;
+    display: block;
+    font-family: callibri;
+  }
+  .sticky-form input,
+  .sticky-form textarea {
+    background-color: #f0f9ff44;
+    background-clip: padding-box;
+    border: 2px dashed #0065b3;
+    border-radius: 0.25rem;
+    color: #00243f;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    padding: 0.375rem 0.75rem;
+    width: calc(100% - 1.5rem);
+  }
+  .sticky-form input:focus,
+  .sticky-form textarea:focus {
+    border: 2px dashed #ffffff;
+    outline: none;
+  }
+  button.button {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    background-color: #d4fc78;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    color: #0065b3;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    user-select: none;
+    vertical-align: middle;
+  }
