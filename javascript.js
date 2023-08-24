@@ -16,6 +16,22 @@ document.addEventListener("DOMContentLoaded", function () {
         messageElement.className = "message";
         messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
         chatBox.appendChild(messageElement);
+        saveChat(sender, message);
+    }
+
+    // Function to save chat in local storage
+    function saveChat(sender, message) {
+        const chatHistory = JSON.parse(localStorage.getItem("chatHistory")) || [];
+        chatHistory.push({ sender, message });
+        localStorage.setItem("chatHistory", JSON.stringify(chatHistory));
+    }
+
+    // Function to load and display chat history
+    function loadChatHistory() {
+        const chatHistory = JSON.parse(localStorage.getItem("chatHistory")) || [];
+        chatHistory.forEach(entry => {
+            displayMessage(entry.sender, entry.message);
+        });
     }
 
     // Add event listener for user input
@@ -31,11 +47,40 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+
+
     // Function to fetch book information from Open Library API
     async function fetchBookInfo(bookName) {
-        // ... your Open Library API fetch code here ...
-        // Return the book information as a formatted string
+        try {
+            const response = await fetch(`https://openlibrary.org/search.json?q=${bookName}`);
+            const responseData = await response.json();
+            const book = responseData.docs[0];
+            if (book) {
+                const title = book.title;
+                const author = book.author_name ? book.author_name[0] : "Unknown Author";
+                const year = book.first_publish_year ? book.first_publish_year : "Unknown Year";
+                const ebookLink = book.ebook_count_i > 0 ? `<a href="https://openlibrary.org${book.key}/ebooks">${book.ebook_count_i} Ebook(s)</a>` : "No Ebook Available";
+                return `Title: ${title}<br>Author: ${author}<br>Year: ${year}<br>${ebookLink}`;
+            } else {
+                return "Book not found.";
+            }
+        } catch (error) {
+            return "An error occurred while fetching book information.";
+        }
     }
+
+    sendButton.addEventListener("click", async function() {
+        const userMessage = userMessageInput.value;
+        if (userMessage) {
+            saveAndDisplayMessage(`You: ${userMessage}`);
+            const bookInfo = await fetchBookInfo(userMessage);
+            saveAndDisplayMessage(`Bot: ${bookInfo}`);
+            userMessageInput.value = "";
+        }
+    });
+
+    // Load chat history on page load
+    loadChatHistory();
 });
 var addButton = document.getElementById("add-button");
 addButton.addEventListener("click", addToDoItem);
