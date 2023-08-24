@@ -1,3 +1,42 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const chatContainer = document.getElementById("chat-container");
+
+    // Create chat elements (you can style them with CSS)
+    const chatBox = document.createElement("div");
+    chatBox.className = "chat-box";
+    const inputBox = document.createElement("input");
+    inputBox.className = "chat-input";
+    inputBox.placeholder = "Type here...";
+    chatBox.appendChild(inputBox);
+    chatContainer.appendChild(chatBox);
+
+    // Function to display messages in chat
+    function displayMessage(sender, message) {
+        const messageElement = document.createElement("div");
+        messageElement.className = "message";
+        messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+        chatBox.appendChild(messageElement);
+    }
+
+    // Add event listener for user input
+    inputBox.addEventListener("keyup", async function (event) {
+        if (event.key === "Enter") {
+            const userMessage = inputBox.value;
+            displayMessage("You", userMessage);
+            inputBox.value = "";
+
+            // Use the Open Library API to fetch book information
+            const bookInfo = await fetchBookInfo(userMessage);
+            displayMessage("Bot", bookInfo);
+        }
+    });
+
+    // Function to fetch book information from Open Library API
+    async function fetchBookInfo(bookName) {
+        // ... your Open Library API fetch code here ...
+        // Return the book information as a formatted string
+    }
+});
 var addButton = document.getElementById("add-button");
 addButton.addEventListener("click", addToDoItem);
 function addToDoItem() {
