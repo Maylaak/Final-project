@@ -63,7 +63,7 @@ div#content {
     background-color: #f5f5f5;
     position: relative;
 }
-.chat-input {
+#chat-input {
     width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
