@@ -231,17 +231,11 @@ div#content {
   outline: none;
 }
 button.button {
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
   background-color: green;
   border-radius: 0.25rem;
   border: 1px solid transparent;
   color: #fff;
   display: inline-block;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5;
   padding: 0.375rem 0.75rem;
   text-align: center;
   user-select: none;
