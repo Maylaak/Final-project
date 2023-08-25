@@ -55,29 +55,30 @@ div#content {
 }
 /* Style for chat container */
 #chat-container {
-    margin-top: 20px;
-    padding: 20px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
 }
-
-/* Style for chat box */
 .chat-box {
-    max-height: 300px;
-    overflow-y: auto;
+    height: 15em;
+    overflow-x: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     background-color: #f5f5f5;
+    position: relative;
 }
-
-/* Style for chat input */
 .chat-input {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .todo-wrapper {
   background-color: #fff;
