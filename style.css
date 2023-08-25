@@ -208,6 +208,7 @@ div#content {
 .sticky-form label,
 .sticky-form input,
 .sticky-form textarea {
+  color: #0065b3;
   display: block;
 }
 .sticky-form input,
@@ -233,10 +234,10 @@ button.button {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
-  background-color: #d4fc78;
+  background-color: green;
   border-radius: 0.25rem;
   border: 1px solid transparent;
-  color: #0065b3;
+  color: #fff;
   display: inline-block;
   font-size: 1rem;
   font-weight: 600;
@@ -245,4 +246,8 @@ button.button {
   text-align: center;
   user-select: none;
   vertical-align: middle;
+}
+button.button:hover {
+  cursor: pointer;
+  opacity: 0.75;
 }
