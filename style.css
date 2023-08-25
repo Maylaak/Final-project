@@ -1,3 +1,6 @@
+*{
+  font-family: sans-serif;
+}
 body {
   background-color: #6497b1;
   width: 1200px;
@@ -18,7 +21,6 @@ div#header {
 #title{
   color:#b3cde0;
   padding-top: 0ch;
-  font-family: "Cooper Black";
   font-weight: 1000;
 }
 div#menu {
@@ -164,9 +166,6 @@ div#content {
   -ms-user-select: none;
   user-select: none;
 }
-.stickytext{
-  font-family: callibri;
-}
 .sticky {
   background: #72abc7;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -176,7 +175,6 @@ div#content {
   padding: 1rem;
   position: absolute;
   width: 12.5rem;
-  font-family: callibri;
 }
 .sticky h3,
 .sticky p {
@@ -216,7 +214,6 @@ div#content {
 .sticky-form textarea {
   color: #fff;
   display: block;
-  font-family: callibri;
 }
 .sticky-form input,
 .sticky-form textarea {
@@ -225,7 +222,6 @@ div#content {
   border: 2px dashed #0065b3;
   border-radius: 0.25rem;
   color: #00243f;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -247,7 +243,6 @@ button.button {
   border: 1px solid transparent;
   color: #0065b3;
   display: inline-block;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
