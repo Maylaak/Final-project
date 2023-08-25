@@ -15,7 +15,7 @@ div#header {
   margin: auto;
 }
 #title{
-  color: 	#b3cde0;
+  color:#b3cde0;
   padding-top: 0ch;
   font-family: "Cooper Black";
   font-weight: 1000;
@@ -75,7 +75,7 @@ div#content {
     border-radius: 5px;
     margin-top: 10px;
     position: absolute;
-    top: 95%;
+    top: 85%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
