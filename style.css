@@ -4,6 +4,7 @@ body {
   margin:0 auto;
   padding:5px;
   text-align:center;
+  font-family: sans-serif;
 }
 div {
   text-align:center;
@@ -84,7 +85,6 @@ div#content {
   opacity: 0.75;
   font-weight: 300;
   height: 250px;
-  font-family: sans-serif;
   opacity: 0.75;
   overflow: scroll;
 }
