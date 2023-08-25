@@ -44,12 +44,7 @@ div#content {
   margin:10px 0 10px 275px;
   height:585px;
 }
-
-#music{
-  border-radius: 1ch;
-  opacity: 0.75;
-}
-
+/*clock*/
 #clock{
   opacity: 0.75;
 }
@@ -80,6 +75,7 @@ div#content {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+/*todo list*/
 .todo-wrapper {
   background-color: #fff;
   border-radius: 1ch;
@@ -92,22 +88,17 @@ div#content {
   opacity: 0.75;
   overflow: scroll;
 }
-
 .todo-wrapper h2 {
   margin: 0;
 }
-
 .todo-wrapper p {
   font-style: italic;
   color: #666;
   margin: 5px 0;
 }
-
 .todo-wrapper ol {
   margin: 20px 0;
-
 }
-
 .todo-wrapper ol li {
   margin: 5px 0;
   padding: 3px;
@@ -117,18 +108,14 @@ div#content {
   user-select: none;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
- 
 }
-
 .todo-wrapper ol li:nth-child(even) {
   background: #ddd;
 }
-
 .todo-wrapper .completed {
   text-decoration: line-through;
   color: #666;
 }
-
 .todo-wrapper .pretty-button {
   margin: 10px 2px;
   padding: 5px 20px;
@@ -140,43 +127,35 @@ div#content {
   display: inline-block;
   font-size: small;
 }
-
 .todo-wrapper .pretty-button:hover {
   cursor: pointer;
   opacity: 0.75;
 }
-
 .todo-wrapper input {
   padding: 3px 6px;
 }
-
 .todo-wrapper form {
   display: inline-block;
 }
-
 #control-wrapper {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .todo-wrapper #clear-button {
   background-color: #011f4b;
 }
-
 .todo-wrapper #empty-button {
   background-color: #03396c;
 }
-
 .todo-wrapper #save-button {
   background-color: #005b96;
 }
-
-
 .todo-wrapper input {
   width: 180px;
 }
+/*sticky note*/
 .drag {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
