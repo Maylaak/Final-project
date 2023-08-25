@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const chatContainer = document.getElementById("chat-container");
+    const inputBox = document.getElementById("chat-input");
 
     // Create chat elements (you can style them with CSS)
-    const chatBox = document.createElement("div");
-    chatBox.className = "chat-box";
-    const inputBox = document.createElement("input");
-    inputBox.className = "chat-input";
     inputBox.placeholder = "Type here...";
-    chatBox.appendChild(inputBox);
+    const chatBox = document.createElement("div");
     chatContainer.appendChild(chatBox);
 
     // Function to display messages in chat
