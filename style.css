@@ -175,7 +175,6 @@ div#content {
 }
 .sticky h3,
 .sticky p {
-    /* color: #0065b3; */
     color: whites;
     pointer-events: none;
 }
@@ -209,7 +208,6 @@ div#content {
 .sticky-form label,
 .sticky-form input,
 .sticky-form textarea {
-  color: #fff;
   display: block;
 }
 .sticky-form input,
