@@ -53,7 +53,6 @@ div#content {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    position: relative;
 }
 .chat-box {
     height: 15em;
@@ -62,15 +61,16 @@ div#content {
     border-radius: 5px;
     padding: 10px;
     background-color: #f5f5f5;
+    position: relative;
 }
-#chat-input {
+.chat-input {
     width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 10px;
     position: absolute;
-    top: 85%;
+    top: 5%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
