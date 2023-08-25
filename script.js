@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const inputBox = document.createElement("input");
     inputBox.className = "chat-input";
     inputBox.placeholder = "Type here...";
-    chatBox.appendChild(inputBox);
+    chatContainer.appendChild(inputBox);
     chatContainer.appendChild(chatBox);
 
     // Function to display messages in chat
