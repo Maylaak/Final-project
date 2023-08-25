@@ -174,110 +174,106 @@ div#content {
 }
 
 
-  .todo-wrapper input {
-      width: 180px;
-  }
-
-  .drag {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  .stickytext{
-    font-family: callibri;
-  }
-  .sticky {
-    background: #72abc7;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    color: white;
-    /* 0 0 150px rgba(0, 0, 0, 0.2); */
-    cursor: grab;
-    display: inline-block;
-    padding: 1rem;
-    position: absolute;
-    width: 12.5rem;
-    font-family: callibri;
-  }
-  .sticky h3,
-  .sticky p {
+.todo-wrapper input {
+  width: 180px;
+}
+.drag {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.stickytext{
+  font-family: callibri;
+}
+.sticky {
+  background: #72abc7;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: grab;
+  display: inline-block;
+  padding: 1rem;
+  position: absolute;
+  width: 12.5rem;
+  font-family: callibri;
+}
+.sticky h3,
+.sticky p {
     /* color: #0065b3; */
     color: whites;
     pointer-events: none;
-  }
-  .sticky h3 {
-    border-bottom: dashed 2px #0085e8;
-    margin: 0 0 1rem;
-    min-height: 1.3rem;
-    padding: 0 1.5rem 0.25rem 0;
-  }
-  .sticky p {
-    margin: 0;
-    min-height: 9rem;
-  }
-  .sticky .deletesticky {
-    color: #0085e8;
-    cursor: pointer;
-    font-size: 2rem;
-    position: absolute;
-    right: 0.8rem;
-    top: 0.4rem;
-  }
-  
-  .sticky-form {
-    bottom: 1rem;
-    position: static;
-    right: 1rem;
-    height: 100px;
-    width: 200px;
-    padding-left: 75%;
-    padding-top: 3%;
-  }
-  .sticky-form label,
-  .sticky-form input,
-  .sticky-form textarea {
-    color: #fff;
-    display: block;
-    font-family: callibri;
-  }
-  .sticky-form input,
-  .sticky-form textarea {
-    background-color: #f0f9ff44;
-    background-clip: padding-box;
-    border: 2px dashed #0065b3;
-    border-radius: 0.25rem;
-    color: #00243f;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 0.75rem;
-    padding: 0.375rem 0.75rem;
-    width: calc(100% - 1.5rem);
-  }
-  .sticky-form input:focus,
-  .sticky-form textarea:focus {
-    border: 2px dashed #ffffff;
-    outline: none;
-  }
-  button.button {
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    background-color: #d4fc78;
-    border-radius: 0.25rem;
-    border: 1px solid transparent;
-    color: #0065b3;
-    display: inline-block;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-    padding: 0.375rem 0.75rem;
-    text-align: center;
-    user-select: none;
-    vertical-align: middle;
-  }
+}
+.sticky h3 {
+  border-bottom: dashed 2px #0085e8;
+  margin: 0 0 1rem;
+  min-height: 1.3rem;
+  padding: 0 1.5rem 0.25rem 0;
+}
+.sticky p {
+  margin: 0;
+  min-height: 9rem;
+}
+.sticky .deletesticky {
+  color: #0085e8;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  right: 0.8rem;
+  top: 0.4rem;
+}
+.sticky-form {
+  bottom: 1rem;
+  position: static;
+  right: 1rem;
+  height: 100px;
+  width: 200px;
+  padding-left: 75%;
+  padding-top: 3%;
+}
+.sticky-form label,
+.sticky-form input,
+.sticky-form textarea {
+  color: #fff;
+  display: block;
+  font-family: callibri;
+}
+.sticky-form input,
+.sticky-form textarea {
+  background-color: #f0f9ff44;
+  background-clip: padding-box;
+  border: 2px dashed #0065b3;
+  border-radius: 0.25rem;
+  color: #00243f;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  padding: 0.375rem 0.75rem;
+  width: calc(100% - 1.5rem);
+}
+.sticky-form input:focus,
+.sticky-form textarea:focus {
+  border: 2px dashed #ffffff;
+  outline: none;
+}
+button.button {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  background-color: #d4fc78;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  color: #0065b3;
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+}
