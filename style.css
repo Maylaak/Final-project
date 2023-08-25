@@ -53,11 +53,11 @@ div#content {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    background-color:#f5f5f5;
 }
 .chat-box {
-    height: 15em;
+    height: 10em;
     overflow-x: auto;
-    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     background-color: #f5f5f5;
