@@ -164,7 +164,7 @@ div#content {
   user-select: none;
 }
 .sticky {
-  background: #72abc7;
+  background: #faeb76;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   color: white;
   cursor: grab;
@@ -189,7 +189,7 @@ div#content {
   min-height: 9rem;
 }
 .sticky .deletesticky {
-  color: #0085e8;
+  color: white;
   cursor: pointer;
   font-size: 2rem;
   position: absolute;
